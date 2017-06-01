@@ -14,11 +14,11 @@ import java.util.Scanner;
 
       while (true) {
         int input = Integer.parseInt(sc.next());
-        ary.add(input);
         if (input == 0)break;
+        ary.add(input);
       }
 
-      for(int i = 0; i < ary.size()-1; i++){
+      for(int i = 0; i < ary.size(); i++){
         System.out.println("Case " + (i+1) + ": " +ary.get(i));
       }
 

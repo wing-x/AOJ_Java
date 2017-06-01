@@ -17,16 +17,16 @@ public class Main {
       ArrayList<Integer> ary = new ArrayList<>();
       int input1 = Integer.parseInt(sc.next());
       int input2 = Integer.parseInt(sc.next());
+      if (input1 == 0 && input2 == 0) break;
       ary.add(input1);
       ary.add(input2);
       Collections.sort(ary);    //この時点で処理がかけられる素晴らしさ！
       ary_ans.add(ary);
-      if (input1 == 0 && input2 == 0) break;
     }
     //System.out.println(ary_ans);//うひょー、素晴らしい！ この書き方良いな、素晴らしいネスト配列だ
 
     //後は表示するだけ、簡単簡単！
-    for (int i = 0; i < ary_ans.size() - 1; i++) {
+    for (int i = 0; i < ary_ans.size(); i++) {
       for (int j = 0; j < ary_ans.get(i).size(); j++) {
         System.out.println(ary_ans.get(i).get(j) + " " + ary_ans.get(i).get(j + 1));
         if (j == ary_ans.get(i).size()) ;
